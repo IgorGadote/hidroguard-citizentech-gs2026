@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento e Alertas | HidroGuard CitizenTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Página inicial HidroGuard">
+                <span class="logo-icone">&#9679;</span> Hidro<strong>Guard</strong>
+            </a>
+            <button id="btn-menu-mobile" class="btn-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav id="nav-menu" class="navegacao" aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início e Regiões</a></li>
+                    <li><a href="monitoramento.html" class="menu-link ativo">Monitoramento e Alertas</a></li>
+                    <li><a href="cadastro.html" class="menu-link">Cadastro Cidadão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-topo">
+            <div class="container">
+                <span class="tag-destaque">Tempo Real &bull; DOM Interativo</span>
+                <h1>Painel de Sensores e Alertas de Emergência</h1>
+                <p>Filtre os alertas ativos por bairro, nível de gravidade ou palavra-chave e acompanhe a telemetria dos sensores instalados.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="painel-filtros" aria-label="Filtros de busca de alertas">
+                    <div class="grupo-campo">
+                        <label for="filtro-regiao">Filtrar por Região de Risco:</label>
+                        <select id="filtro-regiao">
+                            <option value="TODAS">Todas as Regiões</option>
+                            <!-- Opções carregadas via JS -->
+                        </select>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="filtro-gravidade">Nível de Gravidade:</label>
+                        <select id="filtro-gravidade">
+                            <option value="TODOS">Todos os Níveis</option>
+                            <option value="EMERGENCIA">Emergência (Evacuação)</option>
+                            <option value="ALERTA">Alerta Preventivo</option>
+                            <option value="ATENCAO">Atenção</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="filtro-busca-alerta">Buscar por texto ou sensor:</label>
+                        <input type="text" id="filtro-busca-alerta" placeholder="Ex: transbordamento, SN-PLUV...">
+                    </div>
+
+                    <div class="grupo-campo acao-filtro">
+                        <button type="button" id="btn-limpar-filtros" class="btn btn-secundario">Limpar Filtros</button>
+                    </div>
+                </div>
+
+                <div class="barra-status-resultados">
+                    <h2 id="contador-alertas">Alertas Emitidos</h2>
+                </div>
+
+                <div id="lista-alertas-dom" class="lista-alertas">
+                    <!-- Alertas renderizados e filtrados via DOM pelo script.js -->
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-escura">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <div>
+                        <h2>Sensores Pluviométricos e de Nível</h2>
+                        <p>Comparativo em tempo real entre a leitura atual do sensor (mm) e o limite crítico de transbordamento da região.</p>
+                    </div>
+                </div>
+                <div id="lista-sensores-dom" class="cards-grid">
+                    <!-- Sensores renderizados via DOM pelo script.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p><strong>HidroGuard CitizenTech</strong> &mdash; Projeto Acadêmico FIAP (2º Ano Engenharia de Software)</p>
+            <p>Domínio Integrado: Java POO &bull; Banco de Dados Relacional &bull; Protótipo Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
