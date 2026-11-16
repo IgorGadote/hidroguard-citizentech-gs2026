@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cidadão | HidroGuard CitizenTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Página inicial HidroGuard">
+                <span class="logo-icone">&#9679;</span> Hidro<strong>Guard</strong>
+            </a>
+            <button id="btn-menu-mobile" class="btn-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav id="nav-menu" class="navegacao" aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início e Regiões</a></li>
+                    <li><a href="monitoramento.html" class="menu-link">Monitoramento e Alertas</a></li>
+                    <li><a href="cadastro.html" class="menu-link ativo">Cadastro Cidadão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-topo">
+            <div class="container">
+                <span class="tag-destaque">Inclusão e Proteção Civil</span>
+                <h1>Cadastro de Moradores e Apoio Prioritário</h1>
+                <p>Cadastre-se para receber alertas preventivos no celular e sinalize caso haja pessoas com mobilidade reduzida na residência para priorização de resgate.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container layout-duas-colunas">
+                <article class="card card-formulario">
+                    <h2>Novo Cadastro de Cidadão</h2>
+                    <p class="texto-auxiliar">Todos os campos marcados com (*) são de preenchimento obrigatório.</p>
+
+                    <div id="mensagem-geral-form" class="caixa-feedback oculto" role="alert" aria-live="polite"></div>
+
+                    <form id="form-cidadao" novalidate>
+                        <div class="grupo-campo">
+                            <label for="nome-cidadao">Nome Completo *</label>
+                            <input type="text" id="nome-cidadao" placeholder="Ex: Ana Beatriz Souza">
+                            <span id="erro-nome" class="erro-campo"></span>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="cpf-cidadao">CPF (11 números ou formato 000.000.000-00) *</label>
+                            <input type="text" id="cpf-cidadao" placeholder="Ex: 123.456.789-01" maxlength="14">
+                            <span id="erro-cpf" class="erro-campo"></span>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="telefone-cidadao">Telefone / WhatsApp para Alerta *</label>
+                            <input type="tel" id="telefone-cidadao" placeholder="Ex: (11) 98765-4321">
+                            <span id="erro-telefone" class="erro-campo"></span>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="regiao-cidadao">Região de Risco onde reside *</label>
+                            <select id="regiao-cidadao">
+                                <option value="">Selecione um bairro monitorado...</option>
+                                <!-- Carregado dinamicamente pelo JS -->
+                            </select>
+                            <span id="erro-regiao" class="erro-campo"></span>
+                        </div>
+
+                        <div class="grupo-campo campo-checkbox">
+                            <input type="checkbox" id="mobilidade-cidadao">
+                            <label for="mobilidade-cidadao">
+                                Possui mobilidade reduzida, deficiência ou idoso acamado na residência (Prioridade Defesa Civil)
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primario btn-bloco">Concluir Cadastro no HidroGuard</button>
+                    </form>
+                </article>
+
+                <section class="painel-cadastrados" aria-label="Lista de cidadãos cadastrados">
+                    <div class="cabecalho-lista-cidadaos">
+                        <h2>Cidadãos Mapeados na Rede</h2>
+                        <div class="campo-checkbox filtro-check">
+                            <input type="checkbox" id="filtro-prioritarios">
+                            <label for="filtro-prioritarios">Exibir apenas resgate prioritário (Mobilidade Reduzida)</label>
+                        </div>
+                    </div>
+                    <div id="lista-cidadaos-dom" class="lista-cidadaos">
+                        <!-- Cidadãos renderizados via DOM pelo script.js -->
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p><strong>HidroGuard CitizenTech</strong> &mdash; Projeto Acadêmico FIAP (2º Ano Engenharia de Software)</p>
+            <p>Domínio Integrado: Java POO &bull; Banco de Dados Relacional &bull; Protótipo Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
