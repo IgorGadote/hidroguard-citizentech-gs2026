@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HidroGuard | CitizenTech - Alerta Comunitário de Enchentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Página inicial HidroGuard">
+                <span class="logo-icone">&#9679;</span> Hidro<strong>Guard</strong>
+            </a>
+            <button id="btn-menu-mobile" class="btn-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav id="nav-menu" class="navegacao" aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link ativo">Início e Regiões</a></li>
+                    <li><a href="monitoramento.html" class="menu-link">Monitoramento e Alertas</a></li>
+                    <li><a href="cadastro.html" class="menu-link">Cadastro Cidadão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-texto">
+                    <span class="tag-destaque">Global Solution 2026/2 &bull; CitizenTech</span>
+                    <h1>Tecnologia preventiva para salvar vidas antes que a água suba.</h1>
+                    <p>
+                        O <strong>HidroGuard</strong> conecta sensores pluviométricos comunitários de baixo custo a uma rede de alertas diretos para moradores de áreas de risco, priorizando o resgate de idosos e pessoas com mobilidade reduzida.
+                    </p>
+                    <div class="hero-botoes">
+                        <a href="monitoramento.html" class="btn btn-primario">Ver Painel de Alertas</a>
+                        <a href="cadastro.html" class="btn btn-secundario">Cadastrar Morador</a>
+                    </div>
+                </div>
+                <aside class="hero-painel" aria-label="Resumo em tempo real">
+                    <h2>Status da Rede Agora</h2>
+                    <div id="resumo-metricas-home" class="metricas-grid">
+                        <!-- Preenchido via DOM pelo script.js -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <div>
+                        <h2>Regiões de Risco Monitoradas</h2>
+                        <p>Consulte os bairros mapeados, a população estimada e o limite crítico pluviométrico de cada bacia.</p>
+                    </div>
+                    <div class="campo-filtro-inline">
+                        <label for="busca-regiao-home">Filtrar por bairro:</label>
+                        <input type="text" id="busca-regiao-home" placeholder="Ex: Jardim Pantanal...">
+                    </div>
+                </div>
+                <div id="lista-regioes-home" class="cards-grid">
+                    <!-- Cards das regiões renderizados via DOM pelo script.js -->
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-escura">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <div>
+                        <h2>Conexão com os ODS da ONU (Agenda 2030)</h2>
+                        <p>Nossa solução atua diretamente na proteção climática e na inclusão de comunidades vulneráveis.</p>
+                    </div>
+                </div>
+                <div class="cards-grid">
+                    <article class="card card-ods">
+                        <span class="ods-badge">ODS 11</span>
+                        <h3>Cidades e Comunidades Sustentáveis</h3>
+                        <p>
+                            Reduz significativamente o número de pessoas afetadas e as perdas socioeconômicas causadas por desastres hidrometeorológicos, protegendo populações em áreas de várzea e encostas com alertas antecipados.
+                        </p>
+                    </article>
+                    <article class="card card-ods">
+                        <span class="ods-badge">ODS 13</span>
+                        <h3>Ação Contra a Mudança Global do Clima</h3>
+                        <p>
+                            Reforça a resiliência e a capacidade de adaptação comunitária a riscos relacionados ao clima extremo, transformando dados de sensores locais em instruções claras de evacuação e apoio da Defesa Civil.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p><strong>HidroGuard CitizenTech</strong> &mdash; Projeto Acadêmico FIAP (2º Ano Engenharia de Software)</p>
+            <p>Domínio Integrado: Java POO &bull; Banco de Dados Relacional &bull; Protótipo Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
