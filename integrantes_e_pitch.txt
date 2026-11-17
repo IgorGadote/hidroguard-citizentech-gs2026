@@ -17,5 +17,5 @@ LINK DO REPOSITÓRIO NO GITHUB:
 https://github.com/igorgadote/hidroguard-citizentech-gs2026
 
 LINK DO PROTÓTIPO PUBLICADO (GITHUB PAGES):
-https://igorgadote.github.io/hidroguard-citizentech-gs2026/3_web/
+https://igorgadote.github.io/hidroguard-citizentech-gs2026/
 ==================================================================
