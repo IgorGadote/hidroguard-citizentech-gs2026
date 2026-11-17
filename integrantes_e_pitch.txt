@@ -1,0 +1,21 @@
+==================================================================
+FIAP - GLOBAL SOLUTION 2026/2 - CITIZENTECH
+CURSO: 2º ANO ENGENHARIA DE SOFTWARE (TURMA 2ESOR)
+==================================================================
+
+NOME DO PROJETO / GRUPO:
+HidroGuard - Sistema Comunitário de Monitoramento e Alerta de Enchentes
+
+INTEGRANTE DO PROJETO:
+1. Igor Gadote - RM: 567747
+(Nota: Entrega individual alinhada com a coordenação devido à isenção dos demais membros da equipe via pontuação NEXT).
+
+LINK PÚBLICO DO VÍDEO PITCH (ATÉ 3 MINUTOS):
+""""MEU VIDEO NO YT AQUI""""
+
+LINK DO REPOSITÓRIO NO GITHUB:
+https://github.com/igorgadote/hidroguard-citizentech-gs2026
+
+LINK DO PROTÓTIPO PUBLICADO (GITHUB PAGES):
+https://igorgadote.github.io/hidroguard-citizentech-gs2026/3_web/
+==================================================================
