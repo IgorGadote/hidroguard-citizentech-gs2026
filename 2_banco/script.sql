@@ -1,10 +1,9 @@
--- SCRIPT DE BANCO DE DADOS (DDL, DML E CONSULTAS DQL)
+-- Limpeza automática caso o script seja executado mais de uma vez:
 
--- Limpeza prévia:
--- DROP TABLE TB_ALERTA_EMERGENCIA CASCADE CONSTRAINTS;
--- DROP TABLE TB_SENSOR_MONITORAMENTO CASCADE CONSTRAINTS;
--- DROP TABLE TB_CIDADAO CASCADE CONSTRAINTS;
--- DROP TABLE TB_REGIAO_RISCO CASCADE CONSTRAINTS;
+DROP TABLE IF EXISTS TB_ALERTA_EMERGENCIA;
+DROP TABLE IF EXISTS TB_SENSOR_MONITORAMENTO;
+DROP TABLE IF EXISTS TB_CIDADAO;
+DROP TABLE IF EXISTS TB_REGIAO_RISCO;
 
 -- 1. CRIAÇÃO DAS TABELAS (DDL)
 
@@ -98,9 +97,7 @@ VALUES (1, 'EMERGENCIA', 'Risco iminente de transbordamento. Inicie evacuacao pr
 INSERT INTO TB_ALERTA_EMERGENCIA (id_alerta, nv_gravidade, ds_mensagem, dt_hora_emissao, id_regiao, id_sensor)
 VALUES (2, 'ALERTA', 'Volume de chuva proximo ao limite critico da bacia. Prepare itens essenciais.', '2026-11-16 14:15:00', 2, 2);
 
-COMMIT;
-
--- 3. CONSULTAS QUE RESPONDEM PERGUNTAS DO NEGÓCIO
+-- 3. CONSULTAS QUE RESPONDEM PERGUNTAS DO NEGÓCIO 
 
 -- Pergunta 1: Quais alertas foram emitidos, em qual bairro, qual sensor detectou e qual a leitura comparada ao limite crítico?
 SELECT 
