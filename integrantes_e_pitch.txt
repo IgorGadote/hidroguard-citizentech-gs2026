@@ -10,8 +10,8 @@ INTEGRANTE DO PROJETO:
 1. Igor Gadote - RM: 567747
 (Nota: Entrega individual alinhada com a coordenação devido à isenção dos demais membros da equipe via pontuação NEXT).
 
-LINK PÚBLICO DO VÍDEO PITCH (ATÉ 3 MINUTOS):
-""""MEU VIDEO NO YT AQUI""""
+LINK PÚBLICO DO VÍDEO PITCH:
+https://youtu.be/GafYrq-lgKo?si=aXPfpPtD6R4tNxjv
 
 LINK DO REPOSITÓRIO NO GITHUB:
 https://github.com/igorgadote/hidroguard-citizentech-gs2026

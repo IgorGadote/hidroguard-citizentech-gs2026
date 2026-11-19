@@ -9,7 +9,7 @@ O **HidroGuard** é uma plataforma CitizenTech de monitoramento pluviométrico p
 * **Curso / Turma:** 2º Ano de Engenharia de Software — Turma `2ESOR` (FIAP)
 
 ## Links do Projeto
-* **Vídeo Pitch (Até 3 minutos):** https://youtu.be/COLE_AQUI_O_LINK_DO_SEU_VIDEO
+* **Vídeo Pitch (Até 3 minutos):** https://youtu.be/GafYrq-lgKo?si=aXPfpPtD6R4tNxjv
 * **Protótipo Web Publicado (GitHub Pages):** https://igorgadote.github.io/hidroguard-citizentech-gs2026/
 * **Repositório Oficial:** https://github.com/IgorGadote/hidroguard-citizentech-gs2026
 
